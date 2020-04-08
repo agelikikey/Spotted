@@ -13,7 +13,7 @@ export const Jumbotron = props => (
 						<i className="fas fa-search" />
 					</div>
 				</div>
-				<input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Username" />
+				<input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Search" />
 			</div>
 		</div>
 	</div>
