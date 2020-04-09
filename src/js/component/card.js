@@ -10,6 +10,9 @@ export const Card = props => (
 		</div>
 		<ul className="list-group list-group-flush">
 			<li className="list-group-item">
+				<i className="fas fa-dollar-sign">{props.price}</i>
+			</li>
+			<li className="list-group-item">
 				<i className="fas fa-map-marker-alt">{props.location}</i>
 			</li>
 			<li className="list-group-item">{props.date}</li>
@@ -27,5 +30,6 @@ Card.propTypes = {
 	img: PropTypes.string,
 	description: PropTypes.string,
 	location: PropTypes.string,
-	date: PropTypes.string
+	date: PropTypes.string,
+	price: PropTypes.string
 };
