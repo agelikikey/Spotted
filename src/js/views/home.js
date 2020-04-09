@@ -5,6 +5,7 @@ import { Jumbotron } from "../component/jumbotron";
 import { Card } from "../component/card";
 
 export const Home = () => (
+<<<<<<< HEAD
 	<div className="text-center mt-5">
 		<Jumbotron />
 		<div className="card-group justify-content-around">
@@ -35,5 +36,24 @@ export const Home = () => (
 		<a href="#" className="btn btn-success">
 			Blah Blah Blah Blah
 		</a>
+=======
+	<div>
+		<div className="text-center mt-5">
+			<Jumbotron />
+			<h1>Hello Ladies! :) </h1>
+			<p />
+			<a href="#" className="btn btn-success">
+				Blah Blah Blah Blah
+			</a>
+		</div>
+		<div className="text-center mt-5">
+			<h4> JOIN THE MOVEMENT </h4>
+			<h6> FIND YOUR ESSENTIALS TODAY!</h6>
+			<p />
+			<a href="#" className="btn btn-success">
+				SIGN ME UP
+			</a>
+		</div>
+>>>>>>> 939bde3b1bd9a57c7890b0104325a5aaf583cac8
 	</div>
 );
