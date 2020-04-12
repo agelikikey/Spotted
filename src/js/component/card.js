@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const Card = props => (
-	<div className="card mb-3 mx-2 border border-secondary bg-light text-dark rounded" style={{ width: "18rem" }}>
+	<div className="card border border-secondary bg-light text-dark rounded">
 		<img id="card-img" src={props.img} className="card-img-top" alt="..." />
 		<div className="card-body">
 			<h5 className="card-title">{props.title}</h5>
@@ -33,3 +33,5 @@ Card.propTypes = {
 	date: PropTypes.string,
 	price: PropTypes.string
 };
+
+//style={{ width: "18rem" }}
