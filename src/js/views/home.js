@@ -65,7 +65,7 @@ export const Home = () => (
 				/>
 			</div>
 		</div>
-		<div className="text-center mt-5">
+		<div className="text-center mt-5 py-3">
 			<h4> JOIN THE MOVEMENT </h4>
 			<h6> FIND YOUR ESSENTIALS TODAY!</h6>
 			<p />
