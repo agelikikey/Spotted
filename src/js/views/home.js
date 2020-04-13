@@ -51,9 +51,15 @@ export const Home = () => (
 		</div>
 		<div className="container ">
 			<div className="row ">
-				<div className="col-4 justify-content-around text-center mt-5">
+				<div className="col-6 justify-content-around  mt-5">
 					<h1> WHAT IS SPOTTED </h1>
 					<p>
+						<br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						<br />
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -63,9 +69,9 @@ export const Home = () => (
 					</p>
 				</div>
 
-				<div className="col-8 justify-content-around text-center mt-5">
+				<div className="col-6 justify-content-around mt-5">
 					<h1> THE SPOTTED TEAM </h1>
-					<div className="card-group justify-content-around">
+					<div className="card-group justify-content-around  text-center">
 						<Team
 							member="Angel Key"
 							pic="https://media-exp1.licdn.com/dms/image/C4D03AQHXXi5dt2se6Q/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=LalXLpJ7fpG4KfI-Wd5w6BxdL1eWWuI5phT2l7emjuo"

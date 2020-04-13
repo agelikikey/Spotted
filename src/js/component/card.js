@@ -9,11 +9,10 @@ export const Card = props => (
 			<p className="card-text">{props.description}</p>
 		</div>
 		<ul className="list-group list-group-flush">
+			<li className="list-group-item">${props.price}</li>
 			<li className="list-group-item">
-				<i className="fas fa-dollar-sign">{props.price}</i>
-			</li>
-			<li className="list-group-item">
-				<i className="fas fa-map-marker-alt">{props.location}</i>
+				<i className="fas fa-map-marker-alt" />
+				{props.location}
 			</li>
 			<li className="list-group-item">{props.date}</li>
 		</ul>
