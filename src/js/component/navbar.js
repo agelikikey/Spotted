@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //create your first component
 export function Navbar() {
@@ -20,14 +21,18 @@ export function Navbar() {
 			<div className="collapse navbar-collapse" id="navbarResponsive">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Login
-						</a>
+						<Link to="/login">
+							<a className="nav-link" href="#">
+								Login
+							</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Signup
-						</a>
+						<Link to="/signup">
+							<a className="nav-link" href="#">
+								Signup
+							</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

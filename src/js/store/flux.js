@@ -12,6 +12,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
+			],
+			signup: [
+				{
+					title: "FIRST",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "SECOND",
+					background: "white",
+					initial: "white"
+				}
 			]
 		},
 		actions: {
@@ -35,8 +47,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return elm;
 				});
 
+				const signup = store.signup.map((elm, i) => {
+					if (i === index) elm.background = color;
+					return elm;
+				});
+
 				//reset the global store
 				setStore({ demo: demo });
+				setStore({ signup: signup });
 			}
 		}
 	};
