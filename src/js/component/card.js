@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export const Card = props => (
 	<div className="card border border-secondary bg-light text-dark rounded">
@@ -17,9 +18,9 @@ export const Card = props => (
 			<li className="list-group-item">{props.date}</li>
 		</ul>
 		<div className="card-body">
-			<a href="#" className="card-link">
+			<Link to={"/results"} href="#" className="card-link">
 				View on map!
-			</a>
+			</Link>
 		</div>
 	</div>
 );

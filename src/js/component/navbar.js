@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export function Navbar() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<a className="navbar-brand" href="#">
+			<Link to={"/"} className="navbar-brand" href="#">
 				Spotted
-			</a>
+			</Link>
 			<button
 				className="navbar-toggler"
 				type="button"
