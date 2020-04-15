@@ -6,16 +6,41 @@ import { Context } from "../store/appContext";
 export const Results = props => {
 	// const { store, actions } = useContext(Context);
 	return (
-		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element:</h1>
-
-			<hr className="my-4" />
-
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
+		<div className="jumbotron pb-0 px-5">
+			<div className="d-flex justify-content-center">
+				<div className="col-7">
+					<label className="sr-only" htmlFor="inlineFormInputGroup">
+						Search
+					</label>
+					<div className="input-group mb-2">
+						<div className="input-group-prepend">
+							<div className="input-group-text bg-info">
+								<i className="fas fa-search" />
+							</div>
+						</div>
+						<input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Search" />
+						<div className="input-group-append">
+							<span className="input-group-text bg-info text-light">SPOT IT!</span>
+						</div>
+					</div>
+				</div>
+				<div className="col-4">
+					<label className="sr-only" htmlFor="inlineFormInputGroup">
+						Change your SPOT zone
+					</label>
+					<div className="input-group mb-2">
+						<div className="input-group-prepend">
+							<div className="input-group-text bg-info">
+								<i className="fas fa-search-location" />
+							</div>
+						</div>
+						<input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Location" />
+						<div className="input-group-append">
+							<span className="input-group-text bg-info text-light">Change your SPOT zone</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
