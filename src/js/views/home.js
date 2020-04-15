@@ -86,7 +86,7 @@ export const Home = () => (
 						/>
 						<Team
 							member="Stephanie Moure"
-							pic="https://lh3.googleusercontent.com/proxy/XL_C49YZgrdTWOtridKMYj1FNf_UNCvRalMuV6_1JDAXJ8P1R0If8dwTw487bPlasF1JWv1TA0FRAwovWcXHK8KFXs8O3btDlM3tTvJvFpMTsldwEHY"
+							pic="https://lh3.googleusercontent.com/proxy/_hDrHPcPwKo5WQznoAXC4Pknli69RTKzTqNaAVwIevuSeCgESbwJUMyza6TFwHjGHr1QZvR4fc5955CxzPEqBO24zoJ4a11Ntdb522QxwYeLxROHLMY"
 							homebase="Miami Florida"
 							bio="Animal Lover + Software Developer"
 						/>
