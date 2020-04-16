@@ -80,13 +80,17 @@ export const Results = props => {
 					<h1>Hot SPOTS in your area</h1>
 				</div>
 			</div>
-			<div id="resultscard" className="card-columns col-8 justify-content-center ">
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-				<Card />
+			<div id="resultscard" className="card-columns justify-content-center mx-5">
+				<div className="container">
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+				</div>
 			</div>
 		</>
 	);
