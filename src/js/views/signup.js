@@ -14,7 +14,7 @@ export const Signup = () => {
 			<ul className="list-group">
 				{store.signup.map((item, index) => {
 					return (
-						<li key={index} className="d-xl-inline-flex p-2" style={{ background: item.background }}>
+						<li key={index} className="d-flex p-2" style={{ background: item.background }}>
 							<Link to={"/signup/" + index} />
 							<button className="btn btn-success" onClick={() => actions.changeColor(index, "hotpink")}>
 								I Am A New User
