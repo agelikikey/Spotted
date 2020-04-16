@@ -6,22 +6,31 @@ export function Signin() {
 		<div className="wrapper fadeInDown">
 			<div id="formContent">
 				{/* <!-- Icon --> */}
-				<div className="fadeIn first">
+				<div className="fadeIn first" align="center">
 					<img
 						src="https://cdn.pixabay.com/photo/2017/03/19/03/40/avatar-2155431_1280.png"
+						height="500"
+						width="auto"
+						crop="fill"
 						id="icon"
 						alt="User Icon"
 					/>
 				</div>
 				{/* <!-- Login Form --> */}
-				<form>
-					<input type="text" id="login" className="fadeIn second" nameName="login" placeholder="login" />
+				<form align="center">
+					<input
+						type="text"
+						id="login"
+						className="fadeIn second"
+						nameName="login"
+						placeholder="phone number login"
+					/>
 					<input type="text" id="password" className="fadeIn third" nameName="login" placeholder="password" />
 					<input type="submit" className="fadeIn fourth" value="Log In" />
 				</form>
 				{/* <!-- Remind Passowrd --> */}
-				<div id="formFooter">
-					<a className="underlineHover" href="#">
+				<div id="formFooter" align="center">
+					<a className="underlineHover" align="center" href="#">
 						Forgot Password?
 					</a>
 				</div>

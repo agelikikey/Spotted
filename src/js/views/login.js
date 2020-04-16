@@ -32,9 +32,15 @@ export const Login = () => {
 			<div>
 				<Signin />
 			</div>
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
+			<br />
+			<br />
+			<br />
+			<br />
+			<div className="d-flex justify-content-center">
+				<Link to="/">
+					<button className="btn btn-primary">Back home</button>
+				</Link>
+			</div>
 		</div>
 	);
 };
