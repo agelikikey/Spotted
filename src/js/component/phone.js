@@ -6,6 +6,16 @@ export function Phone() {
 		<form>
 			<div className="form-row">
 				<div className="form-group col-md-6">
+					<label htmlFor="inputEmail4">First Name</label>
+					<input type="email" className="form-control" id="inputEmail4" placeholder="Phone Number" />
+				</div>
+				<div className="form-group col-md-6">
+					<label htmlFor="inputPassword4">Last Name</label>
+					<input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
+				</div>
+			</div>
+			<div className="form-row">
+				<div className="form-group col-md-6">
 					<label htmlFor="inputEmail4">Phone Number</label>
 					<input type="email" className="form-control" id="inputEmail4" placeholder="Phone Number" />
 				</div>

@@ -91,6 +91,29 @@ export const Results = props => {
 					<Card />
 					<Card />
 				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<div className="d-flex justify-content-left btn-lg btn-block">
+					<Link to="/">
+						<button className="btn btn-primary ">Back home</button>
+					</Link>
+				</div>
 			</div>
 		</>
 	);
