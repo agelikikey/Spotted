@@ -14,9 +14,44 @@ export function spotModal() {
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
+
                     <div className="modal-body">
-                    <p>Modal body text goes here.</p>
+                        <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="file" className="form-control" accept="image/*" placeholder="Upload image of essential" aria-label="Image" aria-describedby="basic-addon1"/>
+                        </div>
+
+                            <div className="input-group mb-3">
+                                <label for="items">Choose an essential:</label>
+                                    <select id="items">
+                                    <option value="toilet paper">Toilet Paper</option>
+                                    <option value="antibacterial soap">Antibacterial Soap</option>
+                                    <option value="disinfectant wipes">Disinfectant Wipes</option>
+                                    <option value="masks">Masks</option>
+                                    </select>
+                            <div className="input-group-append">
+                                <span className="input-group-text" id="basic-addon2">@example.com</span>
+                            </div>
+                            </div>
+
+                            <label for="basic-url">Enter your location</label>
+                            <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text" id="basic-addon3"><img src="my_location-24px 2.svg" alt="Compass" height="24" width="24"/></span>
+                            </div>
+                            <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+                            </div>
+
+                            <div className="input-group">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text">Describe the item</span>
+                            </div>
+                            <textarea className="form-control" aria-label="With textarea"></textarea>
+                            </div>
                     </div>
+
                     <div className="modal-footer">
                     <button type="button" className="btn btn-primary">Post</button>
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
