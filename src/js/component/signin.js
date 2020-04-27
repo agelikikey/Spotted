@@ -26,7 +26,9 @@ export function Signin() {
 						placeholder="phone number login"
 					/>
 					<input type="text" id="password" className="fadeIn third" nameName="login" placeholder="password" />
-					<input type="submit" className="fadeIn fourth" value="Log In" />
+					<Link to={"/results"} href="#" className="fadeIn fourth" value="Log In">
+						<button className="btn btn-info">Login</button>
+					</Link>
 				</form>
 				{/* <!-- Remind Passowrd --> */}
 				<div id="formFooter" align="center">
