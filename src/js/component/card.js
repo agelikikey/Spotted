@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export const Card = props => (
-	<div className="card border border-secondary bg-light text-dark rounded">
+	<div className="card border border-white bg-light text-dark rounded">
 		<img id="card-img" src={props.img} className="card-img-top" alt="..." />
 		<div className="card-body">
 			<h5 className="card-title">{props.title}</h5>

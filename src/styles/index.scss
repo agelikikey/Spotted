@@ -7,8 +7,32 @@ body {
   border: none;
   border-radius: 20px;
   border-color: #DEDEDE;
+  width: 140px;
+  height: 40px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  margin-bottom: 48px;
+  font-weight: bolder;
+  box-shadow: 7px 7px 8px #CEC8C8;
 }
 
+.siteSearch {
+    // width: 65%;
+    // padding-left: 300px;
+}
+
+.essential-dropdown {
+border: none;
+background-color: white;
+width: 307px;
+}
+
+.location-search {
+    height: 40px;
+}
+
+.card {
+    border: none;
+    box-shadow: 7px 7px 8px #CEC8C8;
+}

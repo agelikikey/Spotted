@@ -13,7 +13,7 @@ export function ButtonModal() {
 	return (
 		<>
 			<Button className="buttonModal" onClick={handleShow}>
-				Launch demo modal
+				Spotted!
 			</Button>
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
