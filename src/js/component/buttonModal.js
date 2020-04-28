@@ -4,7 +4,7 @@ import { Modal } from "react-bootstrap";
 import "../../styles/home.scss";
 import "../../styles/index.scss";
 
-import magnifyingGlass from "../../img/magnifyingGlass.svg";
+import magnifyingGlass from "../../img/magnifyingGlass.png";
 
 export function ButtonModal() {
 	const [show, setShow] = useState(false);
@@ -18,7 +18,7 @@ export function ButtonModal() {
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
 					<Modal.Title>
-						<img src={magnifyingGlass.svg} alt="Magnifying Glass with Heart" height="80" width="80" />
+						<img src={magnifyingGlass} alt="Magnifying Glass with Heart" height="80" width="80" />
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
