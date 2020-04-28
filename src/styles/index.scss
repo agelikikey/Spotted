@@ -36,3 +36,15 @@ width: 307px;
     border: none;
     box-shadow: 7px 7px 8px #CEC8C8;
 }
+
+.card:hover {
+    box-shadow: 7px 7px 8px #FF6288;
+}
+
+.card-link {
+    color: black;
+}
+
+.card-link:hover {
+    color: #FF6288
+}

@@ -27,7 +27,7 @@ export const Home = () => (
 						title="Toilet Paper"
 						img="https://mobileimages.lowes.com/product/converted/054000/054000133428.jpg?size=xl"
 						price="10"
-						location="Publix on Biscayne Blvd"
+						location="  Publix on Biscayne Blvd"
 						description="Found TP today @ Publix for BOGO."
 						date="4 April 2020"
 					/>
@@ -37,7 +37,7 @@ export const Home = () => (
 						title="Hand Sanitizer"
 						img="https://images-na.ssl-images-amazon.com/images/I/81gPULDQMZL._AC_SL1500_.jpg"
 						price="20"
-						location="CVS on 7th"
+						location=". CVS on 7th"
 						description="only allowing 1 per family @ register"
 						date="1 April 2020"
 					/>
@@ -47,7 +47,7 @@ export const Home = () => (
 						title="Bread"
 						img="https://www.ambitiouskitchen.com/wp-content/uploads/2019/04/Multi-Grain-Seedy-Sandwich-Bread-Edited-5sq.jpg"
 						price="5"
-						location="Aldi in Kendall"
+						location="  Aldi in Kendall"
 						description="All kinds of bread just restocked"
 						date="7 April 2020"
 					/>
