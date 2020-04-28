@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import magnifyingGlass from "../../img/magnifyingGlass.png";
+
 //create your first component
 export function Navbar() {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<Link to={"/"} className="navbar-brand" href="#">
-				Spotted
+				<img src={magnifyingGlass} alt="Magnifying Glass with Heart" height="32" />
 			</Link>
 			<button
 				className="navbar-toggler"
