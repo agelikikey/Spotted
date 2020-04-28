@@ -7,6 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Signup } from "./views/signup";
 import { Login } from "./views/login";
+import GoogleLogin from "react-google-login";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
