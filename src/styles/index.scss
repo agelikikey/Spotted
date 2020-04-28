@@ -46,5 +46,27 @@ width: 307px;
 }
 
 .card-link:hover {
-    color: #FF6288
+    color: #FF6288;
+}
+
+.coaFooter {
+    font-weight:medium;
+    background: linear-gradient(270deg, #ff6288, #ff6262, #ff9b62);
+    // background-size: 600% 600%;
+
+    animation: AnimationName 30s ease infinite;
+
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+}
+}
+
+.btnFooter {
+  border: none;
+  border-radius: 20px;
+  border-color: #DEDEDE;
+//   font-size: 12px;
+//   font-weight: bold;
 }
