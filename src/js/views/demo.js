@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext";
 
+import { Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
+
 import "../../styles/demo.scss";
 
 export const Demo = () => {

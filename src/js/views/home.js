@@ -2,14 +2,18 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Jumbotron } from "../component/jumbotron";
+import { ButtonModal } from "../component/buttonModal";
 import { Card } from "../component/card";
 import { Team } from "../component/team";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export const Home = () => (
 	<div>
 		<div className="text-center mt-5">
 			<Jumbotron />
+			<ButtonModal />
 		</div>
 		<div className="text-center mx-5">
 			<h1>Hot Spots</h1>

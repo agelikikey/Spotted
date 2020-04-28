@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Signin } from "../component/signin";
 import { Context } from "../store/appContext";
+import { Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 import "../../styles/demo.scss";
 

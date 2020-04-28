@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { Card } from "../component/card";
+import { ButtonModal } from "../component/buttonModal";
+import { Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export const Results = props => {
 	// const { store, actions } = useContext(Context);
