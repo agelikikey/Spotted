@@ -38,6 +38,10 @@ export function ButtonModal() {
 						aria-label="Image"
 						aria-describedby="basic-addon1"
 					/>
+					<div className="image-preview" id="imagePreview">
+						<span className="image-preview__default-text"> Image Preview </span>
+					</div>
+
 					<br />
 					<select id="items">
 						<option value="default">Choose an essential:</option>
