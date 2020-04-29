@@ -15,7 +15,6 @@ export function Signin() {
 				cookiePolicy={"single_host_origin"}
 			/>
 		</div>
-
 		// <div className="wrapper fadeInDown">
 		// 	<div id="formContent">
 		// 		{/* <!-- Icon --> */}

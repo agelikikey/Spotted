@@ -3,16 +3,28 @@ body {
 }
 
 .buttonModal {
-  background-color: #FF6288;
+  margin-top: 12px;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
+
+        animation: AnimationName 25s ease infinite;
+
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+}
   border: none;
   border-radius: 20px;
-  border-color: #DEDEDE;
+  border:none;
   width: 140px;
   height: 40px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: 25%;
+  z-index: 5;
   margin-bottom: 48px;
+  margin-left: 64px;
   font-weight: bolder;
   box-shadow: 7px 7px 8px #CEC8C8;
 }
@@ -20,6 +32,7 @@ body {
 .siteSearch {
     // width: 65%;
     // padding-left: 300px;
+    opacity: 0.9;
 }
 
 .essential-dropdown {
@@ -49,18 +62,30 @@ width: 307px;
     color: #FF6288;
 }
 
+// .ladies {
+//     border:none !important;
+// }
+
+.ladies:hover {
+    color: #FF6288;
+}
+
 .coaFooter {
     font-weight:medium;
-    background: linear-gradient(270deg, #ff6288, #ff6262, #ff9b62);
-    // background-size: 600% 600%;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
 
-    animation: AnimationName 30s ease infinite;
+    animation: AnimationName 25s ease infinite;
 
     @keyframes AnimationName {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
+    }
 }
+
+.aboutUs {
+    margin-top: 56px;
 }
 
 .btnFooter {
@@ -70,3 +95,56 @@ width: 307px;
 //   font-size: 12px;
 //   font-weight: bold;
 }
+
+.trendingH3 {
+    font-weight: normal;
+}
+
+.resultsSearch {
+    margin-top: 12px;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
+
+        animation: AnimationName 25s ease infinite;
+
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+}
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+.modal {
+    border:none;
+
+}
+
+.modalTitle{
+    display: inline-block;
+    margin-left: 56px;
+}
+
+.modalSave {
+    border-radius: 20px;
+    width: 140px;
+    background: #ff6288;
+    border: none;
+}
+
+.modalClose {
+    display:none;
+}
+
+
+// #resultsSearch {
+//     position: sticky;
+//     top: inherit;
+// }
+
+// #items {
+//     // padding-top: 32px;
+//     display: flex;
+// }
