@@ -4,6 +4,7 @@ import { Modal } from "react-bootstrap";
 import "../../styles/home.scss";
 import "../../styles/index.scss";
 import magnifyingGlass from "../../img/magnifyingGlass.png";
+
 export function ButtonModal() {
 	const [show, setShow] = useState(false);
 	const [imagePreview, setImagePreview] = useState(null);
