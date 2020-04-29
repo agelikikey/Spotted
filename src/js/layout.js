@@ -7,10 +7,11 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Signup } from "./views/signup";
 import { Login } from "./views/login";
+import { Dash } from "./views/dash";
 import GoogleLogin from "react-google-login";
 import injectContext from "./store/appContext";
-
-import { Navbar } from "./component/navbar";
+import NavbarTwo from "./component/navbar_copy";
+// import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Results } from "./views/results";
 
@@ -24,7 +25,7 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
+					<NavbarTwo />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
@@ -32,6 +33,7 @@ export const Layout = () => {
 						<Route path="/login" component={Login} />
 						<Route path="/single/:theid" component={Single} />
 						<Route path="/results" component={Results} />
+						<Route path="/dash" component={Dash} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
