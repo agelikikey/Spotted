@@ -16,12 +16,13 @@ body {
 }
   border: none;
   border-radius: 20px;
-  border-color: #DEDEDE;
+  border:none;
   width: 140px;
   height: 40px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 25%;
+  z-index: 5;
   margin-bottom: 48px;
   margin-left: 64px;
   font-weight: bolder;
@@ -116,7 +117,34 @@ width: 307px;
     z-index: 1;
 }
 
+.modal {
+    border:none;
+
+}
+
+.modalTitle{
+    display: inline-block;
+    margin-left: 56px;
+}
+
+.modalSave {
+    border-radius: 20px;
+    width: 140px;
+    background: #ff6288;
+    border: none;
+}
+
+.modalClose {
+    display:none;
+}
+
+
 // #resultsSearch {
 //     position: sticky;
 //     top: inherit;
+// }
+
+// #items {
+//     // padding-top: 32px;
+//     display: flex;
 // }
