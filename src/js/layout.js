@@ -9,8 +9,8 @@ import { Signup } from "./views/signup";
 import { Login } from "./views/login";
 import GoogleLogin from "react-google-login";
 import injectContext from "./store/appContext";
-
-import { Navbar } from "./component/navbar";
+import NavbarTwo from "./component/navbar_copy";
+// import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Results } from "./views/results";
 
@@ -24,7 +24,7 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
+					<NavbarTwo />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
