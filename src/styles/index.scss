@@ -20,6 +20,7 @@ body {
 .siteSearch {
     // width: 65%;
     // padding-left: 300px;
+    opacity: 0.9;
 }
 
 .essential-dropdown {
@@ -49,18 +50,30 @@ width: 307px;
     color: #FF6288;
 }
 
+// .ladies {
+//     border:none !important;
+// }
+
+.ladies:hover {
+    color: #FF6288;
+}
+
 .coaFooter {
     font-weight:medium;
-    background: linear-gradient(270deg, #ff6288, #ff6262, #ff9b62);
-    // background-size: 600% 600%;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
 
-    animation: AnimationName 30s ease infinite;
+    animation: AnimationName 25s ease infinite;
 
     @keyframes AnimationName {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
+    }
 }
+
+.aboutUs {
+    margin-top: 56px;
 }
 
 .btnFooter {
@@ -70,3 +83,16 @@ width: 307px;
 //   font-size: 12px;
 //   font-weight: bold;
 }
+
+.trendingH3 {
+    font-weight: normal;
+}
+
+// .signUpLogo {
+//     margin-top: 40px;
+//     text-align: left;
+// }
+
+// .signUpH1 {
+//     text-align: left;
+// }

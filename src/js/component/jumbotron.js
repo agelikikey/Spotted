@@ -32,7 +32,7 @@ export const Jumbotron = props => (
 					type="text"
 					className="form-control location-search"
 					id="inlineFormInputGroup"
-					placeholder="Enter your location"
+					placeholder="Enter your zip code"
 				/>
 				{/* </span> */}
 				<div className="input-group-append">
