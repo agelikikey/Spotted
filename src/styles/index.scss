@@ -100,10 +100,12 @@ width: 307px;
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
 }
-    z-index: initial;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
 }
 
-#resultsSearch {
-    position: inherit;
-    top: fixed;
-}
+// #resultsSearch {
+//     position: sticky;
+//     top: inherit;
+// }

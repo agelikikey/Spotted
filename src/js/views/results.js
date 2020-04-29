@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Sticky from "react-sticky-el";
+// import Sticky from "react-sticky-el";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
@@ -17,9 +17,9 @@ export const Results = props => {
 			{/* <Navbar /> */}
 			<div className="jumbotron pb-0 px-5 resultsSearch">
 				<div className="d-flex justify-content-center">
-					<Sticky>
-						<SearchBar id="resultsSearch" />
-					</Sticky>
+					{/* <Sticky> */}
+					<SearchBar id="resultsSearch" />
+					{/* </Sticky> */}
 				</div>
 			</div>
 
