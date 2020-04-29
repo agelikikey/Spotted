@@ -4,6 +4,8 @@ import { Signin } from "../component/signin";
 import { Context } from "../store/appContext";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
+import "../../styles/login.scss";
+// import Tpmask from "../../img/tpmask.png";
 
 import "../../styles/demo.scss";
 
@@ -17,10 +19,10 @@ export const Login = () => {
 					return (
 						<li
 							key={index}
-							className="list-group-item d-flex justify-content-between"
+							className="list-group-item d-flex justify-content-center"
 							style={{ background: item.background }}>
 							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
+							// Check to see if the bac kground is orange, if so, display the message
 							item.background === "orange" ? (
 								<p style={{ color: item.initial }}>
 									Check store/flux.js scroll to the actions to see the code
@@ -32,15 +34,13 @@ export const Login = () => {
 			</ul>
 			<br />
 			<div>
-				<Signin />
+				<Signin className="signInDiv" />
 			</div>
 			<br />
 			<br />
-			<br />
-			<br />
-			<div className="d-flex justify-content-center">
-				<Link to="/">
-					<button className="btn btn-primary">Back home</button>
+			<div className="justify-content-left">
+				<Link to="/signup">
+					<button className="btn btn-primary navSignUp">Not a Spotter? Sign up today!</button>
 				</Link>
 			</div>
 		</div>

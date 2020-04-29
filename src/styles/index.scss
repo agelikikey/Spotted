@@ -21,7 +21,7 @@ body {
   height: 40px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 25%;
+  top: 20%;
   z-index: 5;
   margin-bottom: 48px;
   margin-left: 64px;
@@ -148,3 +148,23 @@ width: 307px;
 //     // padding-top: 32px;
 //     display: flex;
 // }
+
+.navSignUp {
+    color: black;
+    text-decoration: underline;
+    background: none;
+    border: none;
+
+}
+.navSignUp:hover {
+    color: #FF6288;
+    text-decoration: underline;
+    background-color: white;
+
+}
+
+.signInDiv {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
