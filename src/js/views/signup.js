@@ -22,9 +22,6 @@ export const Signup = () => {
 				<h1> SPOTTED </h1>
 			</div>
 			<div className="d-flex justify-content-center">
-				<h3> SIGN UP HERE </h3>
-			</div>
-			<div className="d-flex justify-content-center">
 				<h6> FIND EVERYTHING YOU NEED ALL IN ONE SPOT </h6>
 			</div>
 			<div>
@@ -34,11 +31,6 @@ export const Signup = () => {
 			<br />
 			<br />
 			<br />
-			<div className=" d-flex justify-content-center">
-				<Link to="/">
-					<button className="btn btn-primary ">Back home</button>
-				</Link>
-			</div>
 		</div>
 	);
 };
