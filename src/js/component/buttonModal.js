@@ -29,7 +29,7 @@ export function ButtonModal() {
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					{imagePreview && <img src={imagePreview} />}
+					{/* {imagePreview && <img src={imagePreview} />} */}
 					<input
 						type="file"
 						onChange={e => setImagePreview(URL.createObjectURL(e.target.files[0]))}
@@ -39,8 +39,8 @@ export function ButtonModal() {
 						aria-label="Image"
 						aria-describedby="basic-addon1"
 					/>
-					<div className="image-preview" id="imagePreview">
-						<span className="image-preview__default-text"> Image Preview </span>
+					<div className="container d-flex justify-content-center image-preview">
+						{imagePreview && <img src={imagePreview} />}
 					</div>
 
 					<br />
