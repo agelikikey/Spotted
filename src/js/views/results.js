@@ -22,6 +22,9 @@ export const Results = props => {
 					{/* </Sticky> */}
 				</div>
 			</div>
+			<>
+				<ButtonModal />
+			</>
 
 			<div className="container">
 				<div className="row ">

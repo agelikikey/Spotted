@@ -3,7 +3,17 @@ body {
 }
 
 .buttonModal {
-  background-color: #FF6288;
+  margin-top: 12px;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
+
+        animation: AnimationName 25s ease infinite;
+
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+}
   border: none;
   border-radius: 20px;
   border-color: #DEDEDE;
@@ -11,8 +21,9 @@ body {
   height: 40px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: 25%;
   margin-bottom: 48px;
+  margin-left: 64px;
   font-weight: bolder;
   box-shadow: 7px 7px 8px #CEC8C8;
 }
