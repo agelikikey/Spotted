@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import { Footer } from "../component/footer";
+// import { Navbar } from "../component/navbar";
 
 export const Home = () => (
 	<div>
+		{/* <Navbar /> */}
 		<div className="text-center mt-5">
 			<Jumbotron />
 			{/* <ButtonModal /> */}

@@ -88,11 +88,22 @@ width: 307px;
     font-weight: normal;
 }
 
-// .signUpLogo {
-//     margin-top: 40px;
-//     text-align: left;
-// }
+.resultsSearch {
+    margin-top: 12px;
+    background: linear-gradient(270deg, #ff6288, #1777f2);
+    background-size: 400% 400%;
 
-// .signUpH1 {
-//     text-align: left;
-// }
+        animation: AnimationName 25s ease infinite;
+
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+}
+    z-index: initial;
+}
+
+#resultsSearch {
+    position: inherit;
+    top: fixed;
+}
