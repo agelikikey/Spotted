@@ -13,7 +13,7 @@ export const Login = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container">
+		<div className="loginContainer">
 			<ul>
 				{store.signup.map((item, index) => {
 					return (
