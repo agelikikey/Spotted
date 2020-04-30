@@ -34,23 +34,22 @@ export const ResultsWipes = props => {
 			<>
 				<ButtonModal />
 			</>
-
 			<div className="container">
-				asdflk
 				{wipes.map((item, index) => {
-					<div className="row " key={index}>
-						<div id="resultscard" className="card-columns col-12 justify-content-around ">
-							{item.post_title}
-							{/* <Card
-							title={item.post_title}
-							img={item.img}
-							price={item.price}
-							location={item.location}
-							description={item.brand}
-							date={item.post_date}
-						/> */}
+					return (
+						<div className="row " key={index}>
+							<div id="resultscard" className="card-columns justify-content-around ">
+								<Card
+									title={item.post_title}
+									img={item.img}
+									price={item.price}
+									location={item.location}
+									description={item.brand}
+									date={item.post_date}
+								/>
+							</div>
 						</div>
-					</div>;
+					);
 				})}
 			</div>
 		</>

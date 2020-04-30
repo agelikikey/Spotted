@@ -12,6 +12,16 @@ import { SearchBar } from "../component/searchBar";
 
 export const ResultsTp = props => {
 	// const { store, actions } = useContext(Context);
+	const [toiletpaper, setToiletpaper] = useState([]);
+	useEffect(() => {
+		fetch("https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/toiletpapers")
+			.then(resp => resp.json())
+			.then(data => {
+				console.log("toiletpapers", data);
+				setToiletpaper(data);
+			});
+	}, []);
+
 	return (
 		<>
 			{/* <Navbar /> */}
@@ -27,22 +37,22 @@ export const ResultsTp = props => {
 			</>
 
 			<div className="container">
-				<div className="row ">
-					<div id="resultscard" className="card-columns col-12 justify-content-around ">
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-						<Card />
-					</div>
-				</div>
+				{toiletpaper.map((item, index) => {
+					return (
+						<div className="row " key={index}>
+							<div id="resultscard" className="card-columns justify-content-around ">
+								<Card
+									title={item.post_title}
+									img={item.img}
+									price={item.price}
+									location={item.location}
+									description={item.brand}
+									date={item.post_date}
+								/>
+							</div>
+						</div>
+					);
+				})}
 			</div>
 		</>
 	);
