@@ -10,6 +10,21 @@ export function ButtonModal() {
 	const [imagePreview, setImagePreview] = useState(null);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+	const url = "https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/essentials";
+	fetch(url, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify({
+			whateverKeyNameYouWant: "get value from state",
+			productName: "get the value from the state",
+			productZipCode: "get value from state"
+		})
+	})
+		.then(resp => resp.json())
+		.then(message => console.log(message));
+
 	return (
 		<>
 			<Button className="buttonModal" onClick={handleShow}>
@@ -29,27 +44,29 @@ export function ButtonModal() {
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					{imagePreview && <img src={imagePreview} />}
-					<input
-						type="file"
-						onChange={e => setImagePreview(URL.createObjectURL(e.target.files[0]))}
-						className="form-control"
-						accept="image/*"
-						placeholder="Upload image of essential item"
-						aria-label="Image"
-						aria-describedby="basic-addon1"
-					/>
-					<div className="image-preview" id="imagePreview">
-						<span className="image-preview__default-text"> Image Preview </span>
+					{/* {imagePreview && <img src={imagePreview} />} */}
+					<div>
+						<input
+							type="file"
+							onChange={e => setImagePreview(URL.createObjectURL(e.target.files[0]))}
+							className="form-control"
+							accept="image/*"
+							placeholder="Upload image of essential item"
+							aria-label="Image"
+							aria-describedby="basic-addon1"
+						/>
+						<div className="container d-flex justify-content-center image-preview">
+							{imagePreview && <img src={imagePreview} />}
+						</div>
 					</div>
 
 					<br />
 					<select id="items">
 						<option value="default">Choose an essential:</option>
 						<option value="toilet paper">Toilet Paper</option>
-						<option value="antibacterial soap">Antibacterial Soap</option>
-						<option value="disinfectant wipes">Disinfectant Wipes</option>
-						<option value="masks">Masks</option>
+						<option value="antibacterial soap">Soap</option>
+						<option value="disinfectant wipes">Wipe</option>
+						<option value="masks">Mask</option>
 					</select>
 					<br />
 					<br />

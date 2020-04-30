@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export function Phone() {
 	const [user, setUsers] = useState([]);
 	useEffect(() => {
-		fetch("https://8080-a9eeb69d-3800-482b-a6a8-715c0854e567.ws-us02.gitpod.io/wp-json/sample_api/v1/phones")
+		fetch("https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/users")
 			.then(resp => resp.json())
 			.then(data => {
-				setPhones(data);
+				setUsers(data);
 				// console.log(data);
 			});
 	}, []);
@@ -121,9 +121,11 @@ export function Phone() {
 						</label>
 					</div>
 				</div>
-				<button type="submit" className="btn btn-primary">
-					Sign Up
-				</button>
+				<Link to="/results">
+					<button type="submit" className="btn btn-primary">
+						Sign Up
+					</button>
+				</Link>
 			</form>
 		</>
 	);
