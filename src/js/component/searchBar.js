@@ -10,10 +10,10 @@ export const SearchBar = () => (
 			<div className="input-group-text bg-white">
 				<select className="essential-dropdown">
 					<option value="default">Select an essential:</option>
-					<option value="toilet paper">Toilet Paper</option>
-					<option value="antibacterial soap">Antibacterial Soap</option>
-					<option value="disinfectant wipes">Disinfectant Wipes</option>
-					<option value="masks">Masks</option>
+					<option value="toilet paper">Paper</option>
+					<option value="antibacterial soap">Soap</option>
+					<option value="disinfectant wipes">Wipe</option>
+					<option value="masks">Mask</option>
 				</select>
 			</div>
 		</div>
