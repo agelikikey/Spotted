@@ -103,9 +103,10 @@ export function ButtonModal() {
 									"Content-Type": "application/json"
 								},
 								body: JSON.stringify({
-									itemname: "get the value from the state",
-									price: "get value from state",
-									zip: "get value from state"
+									itemname: "",
+									price: "",
+									zip: "",
+									post_title: ""
 								})
 							})
 								.then(resp => resp.json())

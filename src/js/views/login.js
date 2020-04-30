@@ -10,28 +10,8 @@ import "../../styles/login.scss";
 import "../../styles/demo.scss";
 
 export const Login = () => {
-	const { store, actions } = useContext(Context);
-
 	return (
 		<div className="loginContainer">
-			<ul>
-				{store.signup.map((item, index) => {
-					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-center"
-							style={{ background: item.background }}>
-							{// Conditional render example
-							// Check to see if the bac kground is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-						</li>
-					);
-				})}
-			</ul>
 			<br />
 			<div>
 				<Signin className="signInDiv" />
