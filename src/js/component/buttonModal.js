@@ -8,9 +8,13 @@ import magnifyingGlass from "../../img/magnifyingGlass.png";
 export function ButtonModal() {
 	const [show, setShow] = useState(false);
 	const [imagePreview, setImagePreview] = useState(null);
+
+	const [itemname, setItemname] = useState("");
+	const [zip, setZip] = useState("");
+	const [price, setPrice] = useState("");
+	const [postTitle, setPostTitle] = useState("");
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
-
 	return (
 		<>
 			<Button className="buttonModal" onClick={handleShow}>
@@ -45,9 +49,8 @@ export function ButtonModal() {
 							{imagePreview && <img src={imagePreview} style={{ width: "300px" }} />}
 						</div>
 					</div>
-
 					<br />
-					<select id="items">
+					<select id="items" name="itemname" onChange={e => setItemname(e.target.value)}>
 						<option value="default">Choose an essential:</option>
 						<option value="toilet paper">Toilet Paper</option>
 						<option value="antibacterial soap">Soap</option>
@@ -71,6 +74,9 @@ export function ButtonModal() {
 						id="zipField"
 						aria-describedby="basic-addon3"
 						placeholder="Enter your zipcode"
+						name="zip"
+						value={zip}
+						onChange={e => setZip(e.target.value)}
 					/>
 					<br />
 					<input
@@ -79,12 +85,18 @@ export function ButtonModal() {
 						id="price"
 						aria-describedby="basic-addon3"
 						placeholder="Enter the price $00.00"
+						name="price"
+						value={price}
+						onChange={e => setPrice(e.target.value)}
 					/>
 					<br />
 					<textarea
 						className="form-control"
 						aria-label="With textarea"
 						placeholder="Provide some helpful tips"
+						name="post_title"
+						value={postTitle}
+						onChange={e => setPostTitle(e.target.value)}
 					/>
 				</Modal.Body>
 				<Modal.Footer>
@@ -103,10 +115,10 @@ export function ButtonModal() {
 									"Content-Type": "application/json"
 								},
 								body: JSON.stringify({
-									itemname: "",
-									price: "",
-									zip: "",
-									post_title: ""
+									itemname: itemname,
+									price: price,
+									zip: zip,
+									post_title: postTitle
 								})
 							})
 								.then(resp => resp.json())
