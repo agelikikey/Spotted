@@ -29,8 +29,10 @@ export const SearchBar = () => (
 		/>
 		{/* </span> */}
 		<div className="input-group-append">
-			<button className="btn btn-outline-secondary" type="button">
-				<i className="fas fa-search" />
+			<button className="btn btn-outline-dark bg-white text-dark" type="button">
+				<Link to={"/results-wipes"}>
+					<i className="fas fa-search" />
+				</Link>
 			</button>
 		</div>
 		{/* </div> */}
