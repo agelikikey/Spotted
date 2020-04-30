@@ -10,27 +10,13 @@ export function ButtonModal() {
 	const [imagePreview, setImagePreview] = useState(null);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
-	const url = "https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/essentials";
-	fetch(url, {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json"
-		},
-		body: JSON.stringify({
-			whateverKeyNameYouWant: "get value from state",
-			productName: "get the value from the state",
-			productZipCode: "get value from state"
-		})
-	})
-		.then(resp => resp.json())
-		.then(message => console.log(message));
 
 	return (
 		<>
 			<Button className="buttonModal" onClick={handleShow}>
 				Spotted!
 			</Button>
-			<Modal className="modal" show={show} onHide={handleClose}>
+			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
 					<Modal.Title>
 						<img
@@ -56,7 +42,7 @@ export function ButtonModal() {
 							aria-describedby="basic-addon1"
 						/>
 						<div className="container d-flex justify-content-center image-preview">
-							{imagePreview && <img src={imagePreview} />}
+							{imagePreview && <img src={imagePreview} style={{ width: "300px" }} />}
 						</div>
 					</div>
 
@@ -105,7 +91,27 @@ export function ButtonModal() {
 					<Button className="modalClose" variant="secondary" onClick={handleClose}>
 						Close
 					</Button>
-					<Button className="modalSave" variant="primary" onClick={handleClose}>
+					<Button
+						className="modalSave"
+						variant="primary"
+						onClick={() => {
+							const url =
+								"https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/createessential";
+							fetch(url, {
+								method: "POST",
+								headers: {
+									"Content-Type": "application/json"
+								},
+								body: JSON.stringify({
+									itemname: "get the value from the state",
+									price: "get value from state",
+									zip: "get value from state"
+								})
+							})
+								.then(resp => resp.json())
+								.then(message => console.log(message));
+							handleClose();
+						}}>
 						Save Changes
 					</Button>
 				</Modal.Footer>
