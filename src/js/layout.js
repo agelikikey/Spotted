@@ -12,7 +12,11 @@ import injectContext from "./store/appContext";
 import NavbarTwo from "./component/navbar_copy";
 // import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { Results } from "./views/results";
+import { ResultsSoap } from "./views/results-soap";
+import { ResultsTp } from "./views/results-toiletpaper";
+import { ResultsMasks } from "./views/results-masks";
+import { ResultsWipes } from "./views/results-wipes";
+import { ResultsEssentials } from "./views/results-essentials";
 
 //create your first component
 export const Layout = () => {
@@ -31,7 +35,11 @@ export const Layout = () => {
 						<Route path="/signup" component={Signup} />
 						<Route path="/login" component={Login} />
 						<Route path="/single/:theid" component={Single} />
-						<Route path="/results" component={Results} />
+						<Route path="/results-soap" component={ResultsSoap} />
+						<Route path="/results-masks" component={ResultsMasks} />
+						<Route path="/results-toiletpaper" component={ResultsTp} />
+						<Route path="/results-wipes" component={ResultsWipes} />
+						<Route path="/results-essentials" component={ResultsEssentials} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />

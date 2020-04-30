@@ -10,8 +10,17 @@ import { Modal } from "react-bootstrap";
 import { SearchBar } from "../component/searchBar";
 // import { Navbar } from "../component/navbar";
 
-export const Results = props => {
+export const ResultsSoap = props => {
 	// const { store, actions } = useContext(Context);
+	const [user, setUsers] = useState([]);
+	// useEffect(() => {
+	// 	fetch("")
+	// 		.then(resp => resp.json())
+	// 		.then(data => {
+	// 			setPhones(data);
+	// 			// console.log(data);
+	// 		});
+	// }, []);
 	return (
 		<>
 			{/* <Navbar /> */}
@@ -48,7 +57,7 @@ export const Results = props => {
 	);
 };
 
-Results.propTypes = {};
+ResultsSoap.propTypes = {};
 
 //.card-columns {
 //   @include media-breakpoint-only(lg) {
