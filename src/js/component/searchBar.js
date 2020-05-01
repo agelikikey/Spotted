@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export function SearchBar(props) {
-    const [essential, setEssential] = useState("");
-    
+	const [essential, setEssential] = useState("");
 
 	return (
 		<div className="justify-content-around text-center input-group mb-3 siteSearch">
@@ -22,7 +21,7 @@ export function SearchBar(props) {
 						<option value="">Search an essential</option>
 						<option value="results-toiletpaper">Toilet Paper</option>
 						<option value="results-soap">Antibacterial Soap</option>
-						<option value="results-wipe">Disinfectant Wipes</option>
+						<option value="results-wipes">Disinfectant Wipes</option>
 						<option value="results-masks">Facial Masks</option>
 						<option value="results-essentials">All Essentials</option>
 					</select>
