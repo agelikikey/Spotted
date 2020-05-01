@@ -126,6 +126,13 @@ export function Phone() {
 						Sign Up
 					</button>
 				</Link>
+				<br />
+				<br />
+				<Link to={"/login"}>
+					<button type="submit" className="btn btn-primary">
+						Or Login With Google
+					</button>
+				</Link>
 			</form>
 		</>
 	);

@@ -9,7 +9,7 @@ export function Signin() {
 			<h3> Login With Google</h3>
 			<br />
 			<GoogleLogin
-				clientId="785528636457-r0jl78d0j1j2t7sttoqu5ci4ql98jsng.apps.googleusercontent.com"
+				clientId="785528636457-p83cgbrm3b7is5n2c8a0mm83260vsjke.apps.googleusercontent.com"
 				buttonText="Login"
 				onSuccess={responseGoogle}
 				onFailure={responseGoogle}
