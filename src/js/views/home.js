@@ -1,5 +1,5 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import magnifyingGlass from "../../img/magnifyingGlass.png";
 import "../../styles/home.scss";
 import { Jumbotron } from "../component/jumbotron";
 import { ButtonModal } from "../component/buttonModal";
@@ -59,6 +59,14 @@ export const Home = () => (
 				</div>
 			</div>
 		</div>
+
+		<div className="justify-content-around text-center my-5">
+			<Link to={"/results-essentials"} href="#" className="btn btn-secondary btn-lg">
+				<img src={magnifyingGlass} style={{ width: "50px" }} />
+				See All Spots!
+			</Link>
+		</div>
+
 		<div className="container aboutUs">
 			<div className="row ">
 				<div className="col-4 justify-content-around  mt-5">
