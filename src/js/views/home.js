@@ -20,7 +20,7 @@ export const Home = () => (
 		</div>
 		<div className="text-center mx-5">
 			<h1>Hot Spots</h1>
-			<ButtonModal />
+			{/* <ButtonModal /> */}
 			<h3 className="trendingH3">Trending Finds in Your Area</h3>
 			<br />
 		</div>
