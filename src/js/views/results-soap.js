@@ -14,7 +14,7 @@ export const ResultsSoap = props => {
 	// const { store, actions } = useContext(Context);
 	const [soap, setSoap] = useState([]);
 	useEffect(() => {
-		fetch("https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/soaps")
+		fetch("https://8080-b653c7b7-7ba6-48c6-ae42-619786f4fd5c.ws-us02.gitpod.io/wp-json/sample_api/v1/soaps")
 			.then(resp => resp.json())
 			.then(data => {
 				console.log("soaps", data);
@@ -45,7 +45,7 @@ export const ResultsSoap = props => {
 									title={item.post_title}
 									img={item.img}
 									price={item.price}
-									location={item.location}
+									location={item.zip}
 									description={item.brand}
 									date={item.post_date}
 								/>

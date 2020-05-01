@@ -14,7 +14,7 @@ export const ResultsEssentials = props => {
 	// const { store, actions } = useContext(Context);
 	const [essentials, setEssentials] = useState([]);
 	useEffect(() => {
-		fetch("https://8080-b6966691-a04f-480b-8dfc-c1061693b3a3.ws-us02.gitpod.io/wp-json/sample_api/v1/essentials")
+		fetch("https://8080-b653c7b7-7ba6-48c6-ae42-619786f4fd5c.ws-us02.gitpod.io/wp-json/sample_api/v1/essentials")
 			.then(resp => resp.json())
 			.then(data => {
 				console.log("essentials", data);
@@ -36,23 +36,23 @@ export const ResultsEssentials = props => {
 				<ButtonModal />
 			</>
 
-			<div className="container">
-				{essentials.map((item, index) => {
-					return (
-						<div className="row " key={index}>
-							<div id="resultscard" className="card-columns justify-content-around ">
+			<div className="container ">
+				<div className="row ">
+					{essentials.map((item, index) => {
+						return (
+							<div id="resultscard" className="col-4 justify-content-around text-center my-5" key={index}>
 								<Card
 									title={item.post_title}
 									img={item.img}
 									price={item.price}
-									location={item.location}
+									location={item.zip}
 									description={item.brand}
 									date={item.post_date}
 								/>
 							</div>
-						</div>
-					);
-				})}
+						);
+					})}
+				</div>
 			</div>
 		</>
 	);
