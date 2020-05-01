@@ -9,6 +9,7 @@ export function ButtonModal() {
 	const [show, setShow] = useState(false);
 	const [imagePreview, setImagePreview] = useState(null);
 
+	const [img, setImg] = useState("");
 	const [itemname, setItemname] = useState("");
 	const [zip, setZip] = useState("");
 	const [price, setPrice] = useState("");
@@ -38,7 +39,14 @@ export function ButtonModal() {
 					<div>
 						<input
 							type="file"
-							onChange={e => setImagePreview(URL.createObjectURL(e.target.files[0]))}
+							// onChange={e => setImagePreview(URL.createObjectURL(e.target.files[0]))}
+							// onChange={e => setImg(e.target.value)}
+							onChange={e => {
+								setImagePreview(URL.createObjectURL(e.target.files[0]));
+								setImg(e.target.value);
+							}}
+							name="img"
+							value={img}
 							className="form-control"
 							accept="image/*"
 							placeholder="Upload image of essential item"
@@ -115,6 +123,7 @@ export function ButtonModal() {
 									"Content-Type": "application/json"
 								},
 								body: JSON.stringify({
+									img: img,
 									itemname: itemname,
 									price: price,
 									zip: zip,
