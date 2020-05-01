@@ -23,19 +23,19 @@ export function SearchBar() {
 				</button>
 				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
 					<a className="dropdown-item" href="#">
-						Toilet Paper
+						<Link to="/results-toiletpaper">Toilet Paper</Link>
 					</a>
 					<a className="dropdown-item" href="#">
-						Masks
+						<Link to="/results-masks">Masks</Link>
 					</a>
 					<a className="dropdown-item" href="#">
-						Wipes
+						<Link to="/results-wipes">Wipes</Link>
 					</a>
 					<a className="dropdown-item" href="#">
-						Soap
+						<Link to="/results-soap">Soap</Link>
 					</a>
 					<a className="dropdown-item" href="#">
-						All Essentials
+						<Link to="/results-essentials">All Essentials</Link>
 					</a>
 				</div>
 			</div>
