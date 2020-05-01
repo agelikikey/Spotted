@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import magnifyingGlass from "../../img/magnifyingGlass.png";
 
 export const Card = props => (
+	//     const [state, setState] = useState({
+	// //initialize state here
+	//     });
+
 	<div className="card border border-dark bg-light text-dark rounded">
 		<Link to={"/results-essentials"} href="#" className="card-link">
 			<ReactImageFallback
