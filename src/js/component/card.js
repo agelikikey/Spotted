@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ReactImageFallback from "react-image-fallback";
 import { Link } from "react-router-dom";
 
 import magnifyingGlass from "../../img/magnifyingGlass.png";
@@ -7,7 +8,16 @@ import magnifyingGlass from "../../img/magnifyingGlass.png";
 export const Card = props => (
 	<div className="card border border-dark bg-light text-dark rounded">
 		<Link to={"/results-essentials"} href="#" className="card-link">
-			<img id="card-img" src={props.img} className="card-img-top" alt="..." height="40" />
+			<ReactImageFallback
+				id="card-img"
+				src={props.img}
+				fallbackImage={magnifyingGlass}
+				alt="cool image should be here"
+				className="card-img-top"
+				height="50px"
+			/>
+
+			{/* <img id="card-img" src={props.img} className="card-img-top" alt="..." height="40" /> */}
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">{props.description}</p>
