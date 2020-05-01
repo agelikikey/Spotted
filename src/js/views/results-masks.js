@@ -14,7 +14,7 @@ export const ResultsMasks = props => {
 	// const { store, actions } = useContext(Context);
 	const [masks, setMasks] = useState([]);
 	useEffect(() => {
-		fetch("https://8080-b653c7b7-7ba6-48c6-ae42-619786f4fd5c.ws-us02.gitpod.io/wp-json/sample_api/v1/masks")
+		fetch("https://8080-a97bff73-2556-4de8-ac45-640ee619643b.ws-us02.gitpod.io/wp-json/sample_api/v1/masks")
 			.then(resp => resp.json())
 			.then(data => {
 				console.log("masks", data);
