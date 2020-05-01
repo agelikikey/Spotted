@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
+import magnifyingGlass from "../../img/magnifyingGlass.png";
+
 export const Team = props => (
 	<div className="card mb-3 mx-2 border border-secondary bg-light text-dark rounded" style={{ width: "18rem" }}>
 		<a target="_blank" rel="noopener noreferrer" href={props.linkedin}>
@@ -13,7 +15,8 @@ export const Team = props => (
 		</div>
 		<ul className="list-group list-group-flush">
 			<li className="list-group-item">
-				<i className="fas fa-map-marker-alt">{props.homebase}</i>
+				<img src={magnifyingGlass} alt="Magnifying Glass with Heart" height="32" />
+				{props.homebase}
 			</li>
 		</ul>
 	</div>

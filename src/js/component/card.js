@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
+import magnifyingGlass from "../../img/magnifyingGlass.png";
+
 export const Card = props => (
 	<div className="card border border-white bg-light text-dark rounded">
 		<Link to={"/results-essentials"} href="#" className="card-link">
@@ -13,7 +15,7 @@ export const Card = props => (
 			<ul className="list-group list-group-flush">
 				<li className="list-group-item">${props.price}</li>
 				<li className="list-group-item">
-					<i className="fas fa-map-marker-alt" />
+					<img src={magnifyingGlass} alt="Magnifying Glass with Heart" height="20" />
 					{props.location}
 				</li>
 				<li className="list-group-item">{props.date}</li>

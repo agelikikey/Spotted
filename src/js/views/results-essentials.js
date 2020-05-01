@@ -8,6 +8,7 @@ import { ButtonModal } from "../component/buttonModal";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import { SearchBar } from "../component/searchBar";
+
 // import { Navbar } from "../component/navbar";
 
 export const ResultsEssentials = props => {

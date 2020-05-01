@@ -6,6 +6,7 @@ import { ButtonModal } from "../component/buttonModal";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
+import FullLogo from "../../img/fullLogo.png";
 
 export const Signup = () => {
 	const { store, actions } = useContext(Context);
@@ -19,7 +20,7 @@ export const Signup = () => {
 			</ul>
 			<br />
 			<div className="d-flex justify-content-center">
-				<h1> SPOTTED </h1>
+				<img src={FullLogo} alt="Spotted logo" height="160" />
 			</div>
 			<div className="d-flex justify-content-center">
 				<h6> FIND EVERYTHING YOU NEED ALL IN ONE SPOT </h6>
