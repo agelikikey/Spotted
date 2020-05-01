@@ -6,12 +6,12 @@ export function SearchBar() {
 	const [essential, setEssential] = useState("");
 
 	return (
-		<div className="col-auto input-group mb-3 siteSearch">
+		<div className="justify-content-around text-center input-group mb-3 siteSearch">
 			<label className="sr-only" htmlFor="inlineFormInputGroup">
 				Search
 			</label>
 			{/* <div className="input-group mb-2"> */}
-			<div className="dropdown">
+			<div className="dropdown text-center">
 				<button
 					className="btn btn-secondary dropdown-toggle"
 					type="button"
@@ -19,6 +19,7 @@ export function SearchBar() {
 					data-toggle="dropdown"
 					aria-haspopup="true"
 					aria-expanded="false">
+					<i className="fas fa-search" />
 					Choose an Essential:{" "}
 				</button>
 				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -40,20 +41,20 @@ export function SearchBar() {
 				</div>
 			</div>
 			{/* <span className="input-group-text bg-white text-dark"> */}
-			<input
+			{/* <input
 				type="text"
 				className="form-control location-search"
 				id="inlineFormInputGroup"
 				placeholder="Enter your zip code"
-			/>
+			/> */}
 			{/* </span> */}
-			<div className="input-group-append">
+			{/* <div className="input-group-append">
 				<button className="btn btn-outline-dark bg-white text-dark" type="button">
 					<Link to={"/results-wipes"}>
 						<i className="fas fa-search" />
 					</Link>
 				</button>
-			</div>
+			</div> */}
 			{/* </div> */}
 		</div>
 	);
