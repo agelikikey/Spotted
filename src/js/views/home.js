@@ -61,7 +61,7 @@ export const Home = () => (
 		</div>
 
 		<div className="justify-content-around text-center my-5">
-			<Link to={"/results-essentials"} href="#" className="btn btn-secondary btn-lg">
+			<Link to={"/results-essentials"} href="#" className="btn btn-secondary btn-lg seeMore">
 				<img src={magnifyingGlass} style={{ width: "50px" }} />
 				See All Spots!
 			</Link>

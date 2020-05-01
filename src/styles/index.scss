@@ -22,7 +22,7 @@ body {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 20%;
-  z-index: 5;
+  z-index: 1;
   margin-bottom: 48px;
   margin-left: 64px;
   font-weight: bolder;
@@ -51,7 +51,8 @@ width: 307px;
 }
 
 .card {
-    border: none;
+    border: none !important;
+    border-radius: 10px !important;
     box-shadow: 7px 7px 8px #CEC8C8;
 }
 
@@ -138,6 +139,14 @@ width: 307px;
     width: 140px;
     background: #ff6288;
     border: none;
+}
+
+.seeMore {
+    color: #FF6288;
+    border-radius: 50px;
+    width: 240px;
+    background: white;
+    border: #FF6288 solid;  
 }
 
 .modalClose {
