@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export function SearchBar(props) {
-	const [essential, setEssential] = useState("");
+    const [essential, setEssential] = useState("");
+    
 
 	return (
 		<div className="justify-content-around text-center input-group mb-3 siteSearch">
