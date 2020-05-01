@@ -11,11 +11,11 @@ import { Modal } from "react-bootstrap";
 import { Footer } from "../component/footer";
 // import { Navbar } from "../component/navbar";
 
-export const Home = () => (
+export const Home = props => (
 	<div>
 		{/* <Navbar /> */}
 		<div className="text-center mt-5">
-			<Jumbotron />
+			<Jumbotron {...props} />
 			{/* <ButtonModal /> */}
 		</div>
 		<div className="text-center mx-5">

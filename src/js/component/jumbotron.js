@@ -11,7 +11,7 @@ export const Jumbotron = props => (
 				<img src={FullLogo} alt="Spotted logo" height="160" />
 			</h1>
 			<h5>Find what you need all in one spot!</h5>
-			<SearchBar />
+			<SearchBar {...props} />
 		</div>
 	</div>
 );

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext, Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export function SearchBar() {
+export function SearchBar(props) {
 	const [essential, setEssential] = useState("");
 
 	return (
@@ -11,35 +11,28 @@ export function SearchBar() {
 				Search
 			</label>
 			{/* <div className="input-group mb-2"> */}
-			<div className="dropdown text-center">
-				<button
-					className="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false">
-					<i className="fas fa-search" />
-					Choose an Essential:{" "}
-				</button>
-				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a className="dropdown-item" href="#">
-						<Link to="/results-toiletpaper">Toilet Paper</Link>
-					</a>
-					<a className="dropdown-item" href="#">
-						<Link to="/results-masks">Masks</Link>
-					</a>
-					<a className="dropdown-item" href="#">
-						<Link to="/results-wipes">Wipes</Link>
-					</a>
-					<a className="dropdown-item" href="#">
-						<Link to="/results-soap">Soap</Link>
-					</a>
-					<a className="dropdown-item" href="#">
-						<Link to="/results-essentials">All Essentials</Link>
-					</a>
+			<div className="input-group-prepend">
+				<div className="input-group-text bg-white">
+					<select
+						className="essential-dropdown"
+						id="items"
+						name="itemname"
+						onChange={e => props.history.push("/" + e.target.value)}>
+						<option value="">Search an essential</option>
+						<option value="results-toiletpaper">Toilet Paper</option>
+						<option value="results-soap">Soap</option>
+						<option value="results-wipes">Wipe</option>
+						<option value="results-masks">Mask</option>
+						<option value="results-essentials">All Essentials</option>
+					</select>
 				</div>
+				{/* <div className="input-group-append">
+					<button className="btn btn bg-white text-dark" type="button">
+						<i className="fas fa-search" />
+					</button>
+				</div> */}
 			</div>
+
 			{/* <span className="input-group-text bg-white text-dark"> */}
 			{/* <input
 				type="text"
@@ -51,7 +44,7 @@ export function SearchBar() {
 			{/* <div className="input-group-append">
 				<button className="btn btn-outline-dark bg-white text-dark" type="button">
 					<Link to={"/results-wipes"}>
-						<i className="fas fa-search" />
+						
 					</Link>
 				</button>
 			</div> */}
@@ -60,6 +53,6 @@ export function SearchBar() {
 	);
 }
 
-// SearchBar.propTypes = {
-// 	match: PropTypes.object
-// };
+SearchBar.propTypes = {
+	history: PropTypes.object
+};

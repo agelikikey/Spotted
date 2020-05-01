@@ -28,7 +28,7 @@ export const ResultsSoap = props => {
 			<div className="jumbotron pb-0 px-5 resultsSearch">
 				<div className="d-flex justify-content-center">
 					{/* <Sticky> */}
-					<SearchBar id="resultsSearch" />
+					<SearchBar id="resultsSearch" {...props} />
 					{/* </Sticky> */}
 				</div>
 			</div>
