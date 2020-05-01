@@ -20,9 +20,9 @@ export function SearchBar(props) {
 						onChange={e => props.history.push("/" + e.target.value)}>
 						<option value="">Search an essential</option>
 						<option value="results-toiletpaper">Toilet Paper</option>
-						<option value="results-soap">Soap</option>
-						<option value="results-wipes">Wipe</option>
-						<option value="results-masks">Mask</option>
+						<option value="results-soap">Antibacterial Soap</option>
+						<option value="results-wipe">Disinfectant Wipes</option>
+						<option value="results-masks">Facial Masks</option>
 						<option value="results-essentials">All Essentials</option>
 					</select>
 				</div>

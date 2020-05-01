@@ -7,7 +7,7 @@ import magnifyingGlass from "../../img/magnifyingGlass.png";
 export const Card = props => (
 	<div className="card border border-dark bg-light text-dark rounded">
 		<Link to={"/results-essentials"} href="#" className="card-link">
-			<img id="card-img" src={magnifyingGlass} className="card-img-top" alt="..." height="40" />
+			<img id="card-img" src={props.img} className="card-img-top" alt="..." height="40" />
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">{props.description}</p>

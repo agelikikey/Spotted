@@ -61,9 +61,9 @@ export function ButtonModal() {
 					<select id="items" name="itemname" onChange={e => setItemname(e.target.value)}>
 						<option value="default">Choose an essential:</option>
 						<option value="toilet paper">Toilet Paper</option>
-						<option value="antibacterial soap">Soap</option>
-						<option value="disinfectant wipes">Wipe</option>
-						<option value="masks">Mask</option>
+						<option value="soap">Antibacterial Soap</option>
+						<option value="wipe">Disinfectant Wipes</option>
+						<option value="mask"> Facial Masks</option>
 					</select>
 					<br />
 					<br />
