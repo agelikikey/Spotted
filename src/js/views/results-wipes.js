@@ -34,6 +34,11 @@ export const ResultsWipes = props => {
 			<>
 				<ButtonModal />
 			</>
+
+			<div className="text-center mx-5">
+				<h1>Results for Wipes:</h1>
+			</div>
+
 			<div className="container">
 				<div className="row ">
 					{wipes.map((item, index) => {

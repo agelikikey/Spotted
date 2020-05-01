@@ -36,6 +36,10 @@ export const ResultsTp = props => {
 				<ButtonModal />
 			</>
 
+			<div className="text-center mx-5">
+				<h1>Results for Toilet Paper:</h1>
+			</div>
+
 			<div className="container">
 				<div className="row ">
 					{toiletpaper.map((item, index) => {
