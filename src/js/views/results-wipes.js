@@ -48,7 +48,7 @@ export const ResultsWipes = props => {
 									title={item.post_title}
 									img={item.img}
 									price={item.price}
-									location={item.zip}
+									location={item.location}
 									description={item.brand}
 									date={item.post_date}
 								/>
