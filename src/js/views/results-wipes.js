@@ -35,10 +35,10 @@ export const ResultsWipes = props => {
 				<ButtonModal />
 			</>
 			<div className="container">
-				{wipes.map((item, index) => {
-					return (
-						<div className="row " key={index}>
-							<div id="resultscard" className="card-columns justify-content-around ">
+				<div className="row ">
+					{wipes.map((item, index) => {
+						return (
+							<div id="resultscard" className="col-4 justify-content-around text-center my-5" key={index}>
 								<Card
 									title={item.post_title}
 									img={item.img}
@@ -48,9 +48,9 @@ export const ResultsWipes = props => {
 									date={item.post_date}
 								/>
 							</div>
-						</div>
-					);
-				})}
+						);
+					})}
+				</div>
 			</div>
 		</>
 	);
