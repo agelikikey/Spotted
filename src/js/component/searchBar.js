@@ -35,7 +35,7 @@ export function SearchBar() {
 						Soap
 					</a>
 					<a className="dropdown-item" href="#">
-						Other Essentials
+						All Essentials
 					</a>
 				</div>
 			</div>
