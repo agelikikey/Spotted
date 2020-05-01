@@ -121,7 +121,7 @@ export function Phone() {
 						</label>
 					</div>
 				</div>
-				<Link to="/results">
+				<Link to="/results-essentials">
 					<button type="submit" className="btn btn-primary">
 						Sign Up
 					</button>
